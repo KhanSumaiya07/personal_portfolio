@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumaiya Khan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+</head>
+
+<body data-scroll-container>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <!-- <div id="All-pages" class="relative"> -->
+    <div class="upper fixed flex justify-between p-[40px] w-full">
+        <div class="minicircle h-[3em] w-[3em] bg-[#f86f03] absolute left-[10%] rounded-full"></div>
+        <div class=" text-3xl text-[#f86f03]">Portfolio</div>
+        <div class="category cursor-pointer text-2xl"><i class="ri-align-justify"></i></div>
+    </div>
+
+    <!-- ------nav start------ -->
+    <nav class="h-screen w-[30vw] bg-white fixed right-[-100%] top-0 z-4 transition-all duration-700">
+        <div class="h-[90%] w-[1px] bg-black absolute left-[50px] top-[50%] translate-y-[-50%]"></div>
+        <div
+            class="text-black text-2xl font-semibold flex gap-[40px] flex-col absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">Aboute Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <div
+            class="close cursor-pointer h-[40px] w-[40px] text-4xl font-light text-black absolute top-[50px] right-[50px]">
+            <i class="ri-close-line"></i>
+        </div>
+    </nav>
+    <!-- ------nav end------ -->
+    <!-- ------cursor start-------- -->
+    <!-- <div id="cursor"
+            class="h-[35px] w-[35px] rounded-full bg-slate-200 bg-opacity-50 absolute transition duration-400">
+        </div> -->
+    <!-- ------cursor end-------- -->
+    <!-- ------nav end------ -->
+
+    <!-- ----home section start---- -->
+    <section id="home" class=" flex h-screen items-center pl-[5%]">
+        <div class="content w-1/2 ">
+            <h4 class="text-xl">Hello, <span class="text-[#f86f03]">My Name is</span></h4>
+            <h2 id="element">Sumaiya Khan</h2>
+            <h4 class="dev text-base my-[15px]">i am <span>Front end Developer</span> </h4>
+            <p> Welcome to my online hub, where I bring ideas to life through <br> web development. Explore my
+                portfolio
+                to witness a blend <br> of dedication and innovation. </p>
+            <div class="social text-2xl flex gap-7 ml-2 mt-[15px]">
+
+            </div>
+            <div class="btns mt-6 flex gap-5">
+                <a href="#" class=" border-2 px-5 p-3 rounded-full absolute">Download CV
+                </a>
+                <a href="#" class="border-2 py-3 px-7 rounded-full absolute">Hire Me
+                </a>
+
+            </div>
+        </div>
+        <div class="right flex justify-center w-1/2">
+            <div class="image h-[30vw] w-[30vw] rounded-full bg-white overflow-hidden">
+
+                <img class=" h-[100%] object-cover" src="WhatsApp Image 2023-12-16 at 17.09.36_ba991817.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ----home section end---- -->
+    <!-- ------about me section start------ -->
+    <section class=" w-full" id="about">
+        <h2 class="h-[5%] py-[5%] text-4xl uppercase text-center font-extrabold">About me
+        </h2>
+        <div class="about-content h-[95%] w-full flex">
+            <div class="image w-1/2 flex object-cover h-full justify-center">
+                <img src="web.png" alt="">
+            </div>
+            <div class="content h-full w-1/2">
+                <h1 class="text-3xl w-[50%] font-semibold tracking-wide"> <span class="text-[#f86f03]">Frontend </span>
+                    Developer & UI/UX <span class="text-[#f86f03]">Designer</span></h1>
+                <p class="w-[90%] my-[30px]">Hello! I'm Sumaiya Khan, and I'm thrilled to welcome you to my little
+                    corner of the web!I am
+                    front-end
+                    developer fueled by a passion for crafting immersive digital experiences. As a recent graduate
+                    with a
+                    degree in B.tech with Computer Science stream. I'm eager to contribute my skills to the dynamic
+                    world of
+                    web development.</p>
+
+                <div class="titles flex">
+                    <div class="sub-titles ">
+                        <h4 class="active sub-head text-xl font-semibold tracking-widest">Skills</h4>
+                        <div id="skills" class="titles-content active-tab my-[20px]">
+                            <ul>
+                                <li><span>UI/UX</span> <br>Designing the web interface</li>
+                                <li><span>Front-end Development</span> <br>Responsive and user friendly web
+                                    development</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-titles">
+                        <h4 onclick="showContent('education')" class="sub-head text-xl font-semibold tracking-widest">
+                            Education</h4>
+                        <div id="education" class="titles-content active-tab my-[20px]">
+                            <ul>
+                                <li><span>2023 - Current</span> <br>Master of Technology in Computer Science</li>
+                                <li><span>2023</span><br>Front-end Development Training at Sheryians Coding School
+                                </li>
+                                <li><span>2019 - 2023</span> <br>Becholor of Technology in Computer Science</li>
+                                <li><span>2017-2019</span><br>Senior secondary Education</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-titles">
+                        <h4 onclick="showContent('hobbies')" class="sub-head text-xl font-semibold tracking-widest">
+                            Hobbies</h4>
+                        <div id="hobbies" class="titles-content active-tab my-[20px]">
+                            <ul>
+                                <li><span>Reading Books</span><br> motivational book and inspirational novel </li>
+                                <li><span>Solving puzzles</span> <br></li>
+                                <li><span>Writing and journaling</span></li>
+                                <li><span>Physical activities</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------about me section end------ -->
+    <!-- ---------skills section start--------- -->
+    <section id="skills" class=" w-full">
+        <h2 class="h-[5%] py-[5%] text-4xl uppercase text-center font-extrabold">My skills</h2>
+        <div class="skills-content px-[30px] text-xl font-semibold tracking-widest flex flex-wrap gap-[2%] mb-[40px]">
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] ">
+                <div class="flex gap-[70%]">
+                    <h1>HTML5</h1>
+                    <h1>90%</h1>
+                </div>
+                <div class="line  h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] ">
+                <div class="flex gap-[70%]">
+                    <h1>CSS</h1>
+                    <h1>90%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] ">
+                <div class="flex gap-[60%]">
+                    <h1>JavaScript</h1>
+                    <h1>75%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] mt-[8%]">
+                <div class="flex gap-[70%]">
+                    <h1>Python</h1>
+                    <h1>75%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] mt-[8%]">
+                <div class="flex gap-[55%]">
+                    <h1>C language</h1>
+                    <h1>70%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] mt-[8%]">
+                <div class="flex gap-[70%]">
+                    <h1>C++</h1>
+                    <h1>50%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] mt-[8%]">
+                <div class="flex gap-[73%]">
+                    <h1>SQL</h1>
+                    <h1>60%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%] flex flex-col gap-[50px] mt-[8%]">
+                <div class="flex gap-[45%]">
+                    <h1>Data Structure</h1>
+                    <h1>65%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+            <div class="skill-1 w-[32%]  flex flex-col gap-[50px] mt-[8%]">
+                <div class="flex gap-[70%]">
+                    <h1>OOPS</h1>
+                    <h1>70%</h1>
+                </div>
+                <div class="line h-[3px] w-[100%] bg-zinc-400 rounded-[20px]"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------skills section end--------- -->
+
+    <!-- --------------my projects start-------------- -->
+    <section class="w-full px-[5%]">
+        <h2 class="h-[5%] py-[5%] text-4xl uppercase text-center font-extrabold">MY Projects</h2>
+        <div class="projects-content flex flex-wrap gap-[20px]">
+            <div class="project p-[1%] h-[85vh] w-[32%] bg-black rounded-[10px] overflow-hidden">
+                <div class="project-image overflow-hidden h-1/2 w-full bg-green-500 rounded-[10px]">
+                    <img src="1st-landing page.png" alt="">
+                </div>
+                <div class="content flex flex-col gap-[10px] items-start">
+                    <span class="text-[#f86f03]">Landing Page</span>
+                    <h1 class="text-2xl font-semibold tracking-wide">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident facilis totam nemo beatae rem
+                        quis libero? Ipsum numquam impedit.</p>
+                    <button class="text-xl font-[500] text-[#f86f03]">See project <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div class="project p-[1%] h-[85vh] w-[32%] bg-black rounded-[10px] overflow-hidden">
+                <div class="project-image h-1/2 w-full bg-green-500 rounded-[10px]">
+
+                </div>
+                <div class="content flex flex-col gap-[10px] items-start">
+                    <span class="text-[#f86f03]">Landing Page</span>
+                    <h1 class="text-2xl font-semibold tracking-wide">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident facilis totam nemo beatae rem
+                        quis libero? Ipsum numquam impedit.</p>
+                    <button class="text-xl font-[500] text-[#f86f03]">See project <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div class="project p-[1%] h-[85vh] w-[32%] bg-black rounded-[10px] overflow-hidden">
+                <div class="project-image h-1/2 w-full bg-green-500 rounded-[10px]">
+
+                </div>
+                <div class="content flex flex-col gap-[10px] items-start">
+                    <span class="text-[#f86f03]">Landing Page</span>
+                    <h1 class="text-2xl font-semibold tracking-wide">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident facilis totam nemo beatae rem
+                        quis libero? Ipsum numquam impedit.</p>
+                    <button class="text-xl font-[500] text-[#f86f03]">See project <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div class="project p-[1%] h-[85vh] w-[32%] bg-black rounded-[10px] overflow-hidden">
+                <div class="project-image h-1/2 w-full bg-green-500 rounded-[10px]">
+
+                </div>
+                <div class="content flex flex-col gap-[10px] items-start">
+                    <span class="text-[#f86f03]">Landing Page</span>
+                    <h1 class="text-2xl font-semibold tracking-wide">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident facilis totam nemo beatae rem
+                        quis libero? Ipsum numquam impedit.</p>
+                    <button class="text-xl font-[500] text-[#f86f03]">See project <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div class="project p-[1%] h-[85vh] w-[32%] bg-black rounded-[10px] overflow-hidden">
+                <div class="project-image h-1/2 w-full bg-green-500 rounded-[10px]">
+
+                </div>
+                <div class="content flex flex-col gap-[10px] items-start">
+                    <span class="text-[#f86f03]">Landing Page</span>
+                    <h1 class="text-2xl font-semibold tracking-wide">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident facilis totam nemo beatae rem
+                        quis libero? Ipsum numquam impedit.</p>
+                    <button class="text-xl font-[500] text-[#f86f03]">See project <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div class="project p-[1%] h-[85vh] w-[32%] bg-black rounded-[10px] overflow-hidden">
+                <div class="project-image h-1/2 w-full bg-green-500 rounded-[10px]">
+
+                </div>
+                <div class="content flex flex-col gap-[10px] items-start">
+                    <span class="text-[#f86f03]">Landing Page</span>
+                    <h1 class="text-2xl font-semibold tracking-wide">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident facilis totam nemo beatae rem
+                        quis libero? Ipsum numquam impedit.</p>
+                    <button class="text-xl font-[500] text-[#f86f03]">See project <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------my projects end-------------- -->
+    <!-- -------------contact section start------------ -->
+
+    <section class="w-full">
+        <h2 class="h-[5%] py-[5%] text-4xl uppercase text-center font-extrabold">Contact me</h2>
+        <div class="flex justify-between">
+            <div class="contact-content px-[30px] flex gap-[100px]">
+                <div>
+                    <div
+                        class="icon mb-[70px] h-[60px] w-[60px] border-2 border-zinc-400 rounded-full flex items-center justify-center">
+                        <img class="h-[60%] w-[60%]" src="icons8-address-50 (1).png" alt="">
+                    </div>
+                    <div
+                        class="icon mb-[70px] h-[60px] w-[60px] border-2 border-zinc-400 rounded-full flex items-center justify-center">
+                        <img class="h-[60%] w-[60%]" src="icons8-email-50.png" alt="">
+                    </div>
+                    <div
+                        class="icon mb-[70px] h-[60px] w-[60px] border-2 border-zinc-400 rounded-full flex items-center justify-center">
+                        <img class="h-[60%] w-[60%]" src="icons8-phone-50.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-[50px]">
+                        <h1 class="contact-info">Address</h1>
+                        <h1 class="text-zinc-400">Hazrat Nizamuddin Colony Bhopal</h1>
+                    </div>
+                    <div class="mb-[50px]">
+                        <h1 class="contact-info">Email</h1>
+                        <h1 class="text-zinc-400">eng.sumaiyakhan@gmail.com</h1>
+                    </div>
+                    <div class="mb-[50px]">
+                        <h1 class="contact-info">Phone</h1>
+                        <h1 class="text-zinc-400">8305260165</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[30px] mr-[30px] mb-[30px]">
+                <div class="flex gap-6">
+                    <div class="flex flex-col">
+                        <label class="text-[16px] font-[500] uppercase ml-[22px] mb-[5px]" for="name">Your full name</label>
+                        <input class="bg-zinc-800 rounded-full py-[15px] pl-[30px] pr-[40px] border-2 border-zinc-400 outline-none"
+                            id="name" type="text">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-[16px] font-[500] uppercase ml-[22px] mb-[5px]" for="email">Your email address</label>
+                        <input
+                            class="bg-zinc-800 rounded-full py-[15px] pl-[30px] pr-[40px] outline-none border-2 border-zinc-400"
+                            id="email" type="email">
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-[16px] font-[500] uppercase ml-[22px] mb-[5px]" for="subject">your subject</label>
+                    <input
+                        class="bg-zinc-800 rounded-full py-[15px] pl-[30px] pr-[40px] outline-none border-2 border-zinc-400"
+                        type="text">
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-[16px] font-[500] uppercase ml-[22px] mb-[5px]" for="message">your meassage</label>
+                    <textarea class="h-[140px] bg-zinc-800 border-2 border-zinc-400 outline-none rounded-[30px] resize-none pl-[30px] py-[15px]" id="message"></textarea>
+                </div>
+                <div class="text-end">
+                    <button class="bg-zinc-800 rounded-full py-[15px] pl-[30px] pr-[40px] outline-none border-2 border-zinc-400 text-[16px] font-[500] uppercase">send message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------contact section end------------ -->
+
+
+
+    <!-- </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
